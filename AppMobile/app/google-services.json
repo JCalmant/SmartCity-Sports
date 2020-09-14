@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "77194676127",
+    "firebase_url": "https://my-project-1513382873714.firebaseio.com",
+    "project_id": "my-project-1513382873714",
+    "storage_bucket": "my-project-1513382873714.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77194676127:android:a910ef55c9947c8d",
+        "android_client_info": {
+          "package_name": "com.henallux.sportapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77194676127-fpdb4vv4morn98c8f8l6bvj030as47h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx4KzDwJeJ5hEqtPk13iBQkTokAQTvXgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77194676127:android:c2656a5a3ec514f4",
+        "android_client_info": {
+          "package_name": "com.henallux.sportapp.sportapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77194676127-fpdb4vv4morn98c8f8l6bvj030as47h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx4KzDwJeJ5hEqtPk13iBQkTokAQTvXgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

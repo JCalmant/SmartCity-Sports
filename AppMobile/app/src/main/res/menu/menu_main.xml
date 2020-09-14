@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.henallux.sportapp.sportapp.MainActivity">
+    <item
+        android:id="@+id/ContactMenu"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:orderInCategory="100"
+        android:title="@string/Contact"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/MessageMenu"
+        android:icon="@android:drawable/sym_action_chat"
+        android:orderInCategory="100"
+        android:title="@string/Message"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/HomeMenu"
+        android:orderInCategory="100"
+        android:title="@string/Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ResearchMenu"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="100"
+        android:title="@string/Recherche"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/SettingsMenu"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+</menu>

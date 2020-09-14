@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="BackEndSmartCity.SportPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BackEndSmartCity"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator}, Path= Sport}"
+    >
+
+    <Grid>
+        <TextBlock Style="{StaticResource ResourceKey=TextHeader}" Text="Gestion des sports"/>
+        <local:MenuHeader VerticalAlignment="Top"/>
+        <StackPanel Orientation="Horizontal" Padding="30,30,30,30" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ListView Margin="0,0,10,0" Height="250" BorderThickness="2" x:Name="ListeSports" BorderBrush="Brown" Background="LightSalmon" HorizontalAlignment="Left" VerticalAlignment="Center" ItemsSource="{Binding Sports}" SelectedItem="{Binding SportChoisi, Mode=TwoWay}"/>
+            <StackPanel HorizontalAlignment="Right">
+                <TextBox Text="{Binding InsertionSport, Mode=TwoWay}"/>
+                <Button Content="Ajouter" Command="{Binding Ajouter}"/>
+                <StackPanel BorderBrush="Brown" BorderThickness="1"/>
+                <TextBox IsReadOnly="True" Text="{Binding SportChoisi}"/>
+                <TextBox Text="{Binding ModificationSport, Mode=TwoWay}"/>
+                <Button Content="Modifier" IsEnabled="{Binding ElementName=ListeSports, Path=SelectedItem, Converter={StaticResource IsSelectedItem}}" Command="{Binding Modifier}"/>
+                <StackPanel BorderBrush="Brown" BorderThickness="1"/>
+                <Button Content="Suppimer" IsEnabled="{Binding ElementName=ListeSports, Path=SelectedItem, Converter={StaticResource IsSelectedItem}}" Command="{Binding Supprimer}"/>
+                <TextBlock Text="{Binding Erreur}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

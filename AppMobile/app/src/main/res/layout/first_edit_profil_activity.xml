@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/naissance"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSexe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSexe"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naissance" />
+
+    <EditText
+        android:id="@+id/professionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/professsion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSport" />
+
+    <TextView
+        android:id="@+id/dateDeNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/naissance"
+        app:layout_constraintBottom_toTopOf="@+id/naissance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="188dp"
+        android:text="@string/sexe"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSexe"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/professsion"
+        app:layout_constraintEnd_toStartOf="@+id/professionText"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoUtilisateur" />
+
+    <TextView
+        android:id="@+id/aboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/aboutMe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profession" />
+
+    <EditText
+        android:id="@+id/aboutMeText"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/aboutMe"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aboutMe"
+        app:layout_constraintTop_toBottomOf="@+id/professionText"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <ImageButton
+        android:id="@+id/sendInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:background="@color/pruneFoncé"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutMeText"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ImageView
+        android:id="@+id/photoUtilisateur"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border_image"
+        app:layout_constraintEnd_toStartOf="@+id/naissance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/textSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sport"
+        app:layout_constraintBottom_toTopOf="@+id/profession"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoUtilisateur"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <com.henallux.sportapp.sportapp.NewComponent.MultiSpinner
+        android:id="@+id/spinnerSport"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/professionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSexe"
+        app:layout_constraintVertical_bias="0.509" />
+
+</android.support.constraint.ConstraintLayout>

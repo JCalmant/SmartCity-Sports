@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/prune</item>
+        <item name="colorPrimaryDark">@color/vert</item>
+        <item name="colorAccent">@color/prune</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:scrollViewStyle">@style/Border</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Button" parent="android:Widget.Material.Button">
+        <item name="android:textColor">@color/blanc</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+    <style name="Border" parent="android:Widget.Material.ScrollView">
+        <item name="android:background">@drawable/border</item>
+    </style>
+</resources>
